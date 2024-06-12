@@ -40,3 +40,27 @@ let listLanguage = ['Java', 'C', 'Python', 'JavaScript'];
 
 let newList = addNewElement(listLanguage);
 console.log(newList);
+
+/**
+ * 7 - Crear una funcion que muestre en la consola el numero mas grande y el numero mas pequeno
+ * en la lista
+ */
+
+alert('Numero mas grande y mas pequeno en una lista');
+
+function largeSmallNumber(listNumers) {
+    if (listNumers.Length === 0) {
+        console.log("Empty list ");
+        return
+    }
+
+    const largeNumer = Math.max(...listNumers);
+    const smallNumer = Math.min(...listNumers);
+
+    console.log('The small numer is: ', largeNumer);
+    console.log("The large numer is: ", smallNumer);
+}
+
+let listNumers = [1,2,3,4,5,6,7,8,9];
+
+largeSmallNumber(listNumers);
