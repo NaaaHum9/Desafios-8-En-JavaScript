@@ -64,3 +64,22 @@ function largeSmallNumber(listNumers) {
 let listNumers = [1,2,3,4,5,6,7,8,9];
 
 largeSmallNumber(listNumers);
+
+/**
+ * 8 - Crear una funcion que devuelva la suma de todos los elementos en una lista 
+ */
+
+alert('Suma de los elementos de una lista dada');
+
+let listWithNumers = [12,34,56,78,1,4,2,6,7,9];
+
+function sumTheElements(listWithNumers) {
+    let sum = 0;
+    for (let index = 0; index < listWithNumers.length; index++) {
+        sum += listWithNumers[index];
+    }
+    return sum;
+}
+
+let sumElements = sumTheElements(listWithNumers);
+alert(`The sum is: ${sumElements}`);
