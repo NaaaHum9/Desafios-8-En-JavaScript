@@ -113,3 +113,52 @@ function elementFound(position) {
 
 let position = searchList(listElement, elementSearch);
 elementFound(position);
+
+
+/**
+ * 10 - Crear una funcion que reciba dos listas de numeros del mismo tamanio
+ * y devuelva una lista con la suma de los elementos de cada uno a uno
+ */
+
+alert('Suma de los elementos dos listas');
+
+let listOne = [10,20,30,40,50,60,70,80,90];
+let listTwo = [1,2,3,4,5,6,7,8,9];
+let newnewList = [];
+
+function sumList(listOne, listTwo) {
+    let newList = [];
+
+    for (let i = 0; i < listOne.length; i++) {
+        let suma = listOne[i] + listTwo[i];
+        newList.push(suma);
+    }
+    return newList;
+}
+
+newnewList = sumList(listOne, listTwo);
+console.log(newnewList);
+
+/**
+ * 11 - Crear una funcion que reciba una lista de numeros 
+ * y devuelva una nueva lista con el cuadrado de cada numero
+ */
+
+alert('Lista al cuadrado');
+
+let listOriginal = [1,2,3,4,5,6,7,8,9,10];
+let powListOriginal = [];
+
+function powList(list) {
+    let newList = [];
+
+    for (let index = 0; index < list.length; index++) {
+        let element = Math.pow(list[index], 2);//eleva al cuadrado a cada index
+        //element = Math.pow(element, 2);
+        newList.push(element);
+    }
+    return newList;
+}
+
+powListOriginal = powList(listOriginal);
+console.log(powListOriginal);
