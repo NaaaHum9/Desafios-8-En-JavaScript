@@ -83,3 +83,33 @@ function sumTheElements(listWithNumers) {
 
 let sumElements = sumTheElements(listWithNumers);
 alert(`The sum is: ${sumElements}`);
+
+/**
+ * 9 - crear una funcion que devuelva la posicion en la lista donde se encuantre un 
+ * elemento pasado como parametro o -1 si no esta en la lista
+ */
+
+alert('Busqueda en una lista');
+
+let listElement = [12, 23, 34, 45, 56, 67, 78, 89, 90];
+let elementSearch = parseInt(prompt("Ingresa el numero a buscar: "));
+
+function searchList(listElement, elementSearch) {
+    for (let index = 0; index < listElement.length; index++) {
+        if (elementSearch == listElement[index]) {
+            return index;
+        }
+    }
+    return -1;
+}
+
+function elementFound(position) {
+    if (position != -1) {
+        alert(`El elemento se encontro en la posición ${position}`);
+    } else {
+        alert('Elemento no encontrado en la lista');
+    }
+}
+
+let position = searchList(listElement, elementSearch);
+elementFound(position);
